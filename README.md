@@ -1,23 +1,5 @@
 # Chat Application with NodeJS
 
-**denemee** **_dsdsdsd_** [test][test]
+This project is a simple demonstration of **WebSocket** chat server. The implementation of WebSocket server is done by nodejs's WebSocket API. The client-side of project is pure HTML + Javascript.
 
-1. asasa
-2. asasafedf
-3. sdsds
-
-- sasaasa
-- ddsdsd
-  1. asasasas
-  2. sasasasa
-
-dsdsdssds
-sdsdsdsds
-
-dsdsdsdsdsdsds
-
-vicdan
-
-## sdsdsdsds
-
-[test]: http://google.com
+Chat messages are broadcasted over all web clients.
