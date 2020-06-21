@@ -1,0 +1,11 @@
+{
+  "name": "chatapp-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^7.3.0"
+  }
+}
