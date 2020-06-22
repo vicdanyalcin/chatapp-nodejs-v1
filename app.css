@@ -1,0 +1,100 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  background: white;
+  font-family: "Crimson Text", serif;
+  min-height: 100%;
+}
+
+header {
+  background: rgb(79, 24, 116);
+  height: 66px;
+}
+header * {
+  color: rgb(242, 244, 250);
+}
+header .logo {
+  float: left;
+  height: inherit;
+  margin-left: 2em;
+}
+header .logo-text {
+  margin: 5px;
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+}
+header .logo-text span {
+  color: blueviolet;
+}
+header ul {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+header ul li {
+  float: left;
+  position: relative;
+}
+header ul li ul {
+  position: absolute;
+  top: 66px;
+  right: 0px;
+  width: 180px;
+  display: none;
+  z-index: 88888;
+}
+header ul li:hover ul {
+  display: block;
+}
+header ul li ul li {
+  width: 100%;
+}
+header ul li ul li a {
+  padding: 10px;
+  color: purple;
+}
+
+header ul li ul li a.logout {
+  color: red;
+}
+header ul li ul li a:hover {
+  background: gray;
+}
+header ul li a {
+  display: block;
+  padding: 21px;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+header ul li a:hover {
+  background-color: gray;
+  transition: 0.5s;
+}
+
+header .menu-toggle {
+  display: none;
+}
+.page-wrapper {
+  min-height: 100%;
+}
+.page-wrapper a:hover {
+  color: purple;
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  height: 80vh;
+}
+
+.un{
+font-family: bold;
+}
+
+.d {
+    font-style: italic;
+}
