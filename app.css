@@ -1,100 +1,231 @@
-html,
-body {
-  padding: 0px;
-  margin: 0px;
-  background: white;
-  font-family: "Crimson Text", serif;
-  min-height: 100%;
-}
-
-header {
-  background: rgb(79, 24, 116);
-  height: 66px;
-}
-header * {
-  color: rgb(242, 244, 250);
-}
-header .logo {
-  float: left;
-  height: inherit;
-  margin-left: 2em;
-}
-header .logo-text {
-  margin: 5px;
-  font-family: "Crimson Text", serif;
-  font-style: italic;
-}
-header .logo-text span {
-  color: blueviolet;
-}
-header ul {
-  float: right;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-header ul li {
-  float: left;
-  position: relative;
-}
-header ul li ul {
-  position: absolute;
-  top: 66px;
-  right: 0px;
-  width: 180px;
-  display: none;
-  z-index: 88888;
-}
-header ul li:hover ul {
-  display: block;
-}
-header ul li ul li {
-  width: 100%;
-}
-header ul li ul li a {
-  padding: 10px;
-  color: purple;
-}
-
-header ul li ul li a.logout {
-  color: red;
-}
-header ul li ul li a:hover {
-  background: gray;
-}
-header ul li a {
-  display: block;
-  padding: 21px;
-  font-size: 1.1em;
-  text-decoration: none;
-}
-header ul li a:hover {
-  background-color: gray;
-  transition: 0.5s;
-}
-
-header .menu-toggle {
-  display: none;
-}
-.page-wrapper {
-  min-height: 100%;
-}
-.page-wrapper a:hover {
-  color: purple;
-}
-
-.main {
+/* .main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
   height: 80vh;
+} */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-.un{
-font-family: bold;
+body {
+  background: #c5ddeb;
+
+  padding: 40px 0;
+  color: white;
+}
+.container {
+  margin: 0 auto;
+  width: 750px;
+  display: block;
+  background: #444753;
+  border-radius: 5px;
+}
+.un {
+  font-family: bold;
 }
 
 .d {
-    font-style: italic;
+  font-style: italic;
+}
+
+.user-list {
+  width: 260px;
+  float: left;
+}
+
+.search {
+  padding: 15px;
+}
+input {
+  border-radius: 4px;
+  border: none;
+  padding: 14px;
+  color: white;
+  background: #6a6c75;
+  width: 90%;
+  font-size: 14px;
+}
+.fa-search {
+  position: relative;
+  left: -25px;
+}
+ul {
+  padding: 20px;
+  height: 770px;
+}
+
+li {
+  padding-bottom: 20px;
+}
+
+img {
+  float: left;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.about {
+  float: left;
+  margin-top: 8px;
+}
+
+.about {
+  padding-left: 8px;
+}
+
+.status {
+  color: red;
+}
+.chat {
+  width: 490px;
+  float: left;
+  background: #f2f5f8;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  color: #434651;
+}
+
+.chat-header {
+  padding: 20px;
+  border-bottom: 2px solid white;
+}
+
+img {
+  float: left;
+}
+
+.chat-about {
+  float: left;
+  padding-left: 10px;
+  margin-top: 6px;
+}
+
+.chat-with {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.chat-num-messages {
+  color: gray;
+}
+
+.fa-star {
+  float: right;
+  color: #d8dadf;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.chat-history {
+  padding: 30px 30px 20px;
+  border-bottom: 2px solid white;
+  overflow-y: scroll;
+  height: 575px;
+}
+.message-data {
+  margin-bottom: 15px;
+}
+
+.message-data-time {
+  color: lighten(gray, 8%);
+  padding-left: 6px;
+}
+
+.message {
+  color: white;
+  padding: 18px 20px;
+  line-height: 26px;
+  font-size: 16px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  width: 90%;
+  background: green;
+  position: relative;
+}
+
+.my-message {
+}
+
+.other-message {
+  background: blue;
+}
+
+.chat-message {
+  padding: 30px;
+}
+textarea {
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  font: 14px/22px "Lato", Arial, sans-serif;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  resize: none;
+}
+
+.fa-file-o,
+.fa-file-image-o {
+  font-size: 16px;
+  color: gray;
+  cursor: pointer;
+}
+
+button {
+  float: right;
+  color: blue;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #f2f5f8;
+}
+
+.online,
+.offline,
+.me {
+  margin-right: 3px;
+  font-size: 10px;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: orange;
+}
+
+.me {
+  color: blue;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.date {
+  color: red;
 }

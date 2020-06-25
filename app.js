@@ -15,7 +15,7 @@ const socket = new WebSocket("ws://localhost:8080");
 
 // Connection opened
 socket.addEventListener("open", function (event) {
-  m = { username: userid, data: "Hello Server!" };
+  m = { username: userid, data: "Hello Server!", time: new Date() };
   console.log(m);
   socket.send(JSON.stringify(m));
 });
@@ -25,6 +25,8 @@ socket.addEventListener("message", function (event) {
   console.log("Message from server ", event.data);
   messages = document.getElementById("messages");
   msg = document.createElement("div");
+  date = document.createElement("span");
+  date.classList.add("date");
   un = document.createElement("span");
   un.classList.add("un");
   jd = JSON.parse(event.data);
@@ -32,6 +34,10 @@ socket.addEventListener("message", function (event) {
   d = document.createElement("span");
   d.classList.add("d");
   d.innerHTML = jd.data;
+  date.innerHTML = jd.time;
+  msg.classList.add("message");
+  msg.appendChild(date);
+
   msg.appendChild(un);
   msg.appendChild(d);
   messages.appendChild(msg);
@@ -41,7 +47,8 @@ function sendMessage() {
   i_t_m = document.getElementById("msg_text");
   t_m = i_t_m.value;
   console.log(t_m);
-  m = { username: userid, data: t_m };
+  m = { username: userid, data: t_m, time: new Date() };
   console.log(m);
   socket.send(JSON.stringify(m));
+  document.getElementById("msg_text").value = "";
 }
