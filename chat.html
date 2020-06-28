@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatroom </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="user-list">
+            <div class="search"><input type="text" placeholder="search.." />
+                <i class="fa fa-search"></i></div>
+            <ul class="list">
+                <li>
+                    <img src="./harleyquinn.jpg" alt="avatar" style="width: 3;">
+                    <div class="about">
+                        <div class="name">Vicdan Yalçın</div>
+                        <div class="status">
+                            <i class="fa fa-circle online">Online</i>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./harleyquinn.jpg" alt="avatar" style="width: 10;">
+                    <div class="about">
+                        <div class="name">Vicdan Yalçın</div>
+                        <div class="status">
+                            <i class="fa fa-circle online">Online</i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="chat">
+            <div class="chat-header clearfix">
+                <img src="./harleyquinn.jpg" alt="avatar" />
+
+                <div class="chat-about">
+                    <div class="chat-with">Chat with V</div>
+                    <div class="chat-num-messages">already 1 902 messages</div>
+                </div>
+                <i class="fa fa-star"></i>
+            </div> <!-- end chat-header -->
+
+            <div class="chat-history">
+                <ul>
+                    <li class="clearfix">
+                        <div class="message-data align-right">
+                            <span class="message-data-time">10:10 AM, Today</span> &nbsp; &nbsp;
+                            <span class="message-data-name">hhhh</span> <i class="fa fa-circle me"></i>
+
+                        </div>
+                        <div class="message other-message float-right">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quasi commodi iure
+                            dignissimos, vel eveniet harum nemo molestiae animi consequatur laborum soluta laudantium!
+                            Perferendis quas dolorem aliquid, voluptatibus beatae iusto. </div>
+                    </li>
+
+                    <li>
+                        <div class="message-data">
+                            <span class="message-data-name"><i class="fa fa-circle online"></i> Vy</span>
+                            <span class="message-data-time">10:12 AM, Today</span>
+                        </div>
+                        <div class="message my-message">
+                            Lorem ipsum dolor sit amet. you.
+                        </div>
+                    </li>
+
+                    <li class="clearfix">
+                        <div class="message-data align-right">
+                            <span class="message-data-time">10:14 AM, Today</span> &nbsp; &nbsp;
+                            <span class="message-data-name">Işıl</span> <i class="fa fa-circle me"></i>
+
+                        </div>
+                        <div class="message other-message float-right">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel autem ab natus quisquam sit
+                            facilis. </div>
+                    </li>
+
+                    <li>
+                        <div class="message-data">
+                            <span class="message-data-name"><i class="fa fa-circle online"></i> Vy</span>
+                            <span class="message-data-time">10:20 AM, Today</span>
+                        </div>
+                        <div class="message my-message">
+                            Lorem ipsum dolor sit amet consectetur adipisicing. </div>
+                    </li>
+
+                    <li>
+                        <div id="messages">
+                            <span class="message-data-name"><i class="fa fa-circle online"></i> VY</span>
+                            <span class="message-data-time">10:31 AM, Today</span>
+                        </div>
+                        <i class="fa fa-circle online"></i>
+                        <i class="fa fa-circle online" style="color: #AED2A6"></i>
+                        <i class="fa fa-circle online" style="color:#DAE9DA"></i>
+                    </li>
+
+                </ul>
+
+            </div> <!-- end chat-history -->
+
+            <div id="chat-message" id="chatMsg">
+                <form onsubmit="sendMessage(); return false;">
+                    <input id="msg_text" type="text" /><button id="changeColor" type="submit" value="send"
+                        onclick="getRandomColor()"> Send <i class="fa fa-paper-plane"></i>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <a href="index.html" class="btn">Leave Room</a>
+
+
+
+
+    <div id="footer"></div> -->
+    <script src="app.js"></script>
+</body>
+
+</html>
