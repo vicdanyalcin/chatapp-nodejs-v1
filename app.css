@@ -12,14 +12,14 @@
 }
 
 body {
-  background: #c5ddeb;
+  background: #e0e2e4;
 
   padding: 40px 0;
   color: white;
 }
 .container {
   margin: 0 auto;
-  width: 750px;
+  width: 960px;
   display: block;
   background: #444753;
   border-radius: 5px;
@@ -60,6 +60,8 @@ ul {
 
 li {
   padding-bottom: 20px;
+  list-style: none;
+  border-style: none;
 }
 
 img {
@@ -71,17 +73,15 @@ img {
 .about {
   float: left;
   margin-top: 8px;
-}
-
-.about {
-  padding-left: 8px;
+  display: block;
+  position: relative;
 }
 
 .status {
   color: red;
 }
 .chat {
-  width: 490px;
+  width: 700px;
   float: left;
   background: #f2f5f8;
   border-top-right-radius: 5px;
@@ -152,7 +152,7 @@ img {
 }
 
 .other-message {
-  background: blue;
+  background: rgb(83, 83, 207);
 }
 
 .chat-message {
@@ -225,7 +225,5 @@ button {
   clear: both;
   height: 0;
 }
-
-.date {
-  color: red;
+.messages {
 }
